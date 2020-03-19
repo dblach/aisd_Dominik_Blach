@@ -51,8 +51,7 @@ lnode* filter(lnode *L){
         i++;
         L=L->next;
     }
-    return new lnode();
-    //return head;
+    return head;
 }
 
 int main(){
@@ -79,7 +78,7 @@ int main(){
     std::cout<<"s="<<suma(l1)<<"\n";
     
     //zawiesza program :(
-    //lnode* lista2=filter2l1);
+    //lnode* lista2=filter(l1);
     //std::cout<<nty(0,lista2)<<","<<nty(1,lista2)<<","<<nty(2,lista2)<<","<<nty(3,lista2)<<"\n";
     
     return 0;
