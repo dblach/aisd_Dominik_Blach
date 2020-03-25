@@ -1,0 +1,1 @@
+Wynika to z twierdzenia o pełnym drzewie binarnym, które mówi, że liczba liści w niepustym drzewie binarnym wynosi n+1, gdzie n oznacza liczbę węzłów wewnętrznych. Wskaźniki te przechowują wewnętrzną strukturę drzewa, ale nie zapewniają dostępu do żadnych nowych danych.

@@ -1,0 +1,2 @@
+Drzewo o głębokości h może mieć maksymalnie (2^h)-1 węzłów.
+Najmniejsza głębokość drzewa binarnego o n węzłach to log2[(n+1)-1], maksymalna: n-1.
