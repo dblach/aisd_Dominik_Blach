@@ -50,6 +50,12 @@
         "thread": "cpp",
         "unordered_map": "cpp",
         "vector": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "deque": "cpp",
+        "stack": "cpp",
+        "ctime": "cpp",
+        "fstream": "cpp",
+        "random": "cpp",
+        "sstream": "cpp"
     }
 }
