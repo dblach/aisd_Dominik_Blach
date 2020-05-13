@@ -1,0 +1,1 @@
+Ten pesymistyczny przypadek ma miejsce wtedy, gdy klucz osiowy (wybrany jeden z elementów) w każdej iteracji znajduje się na brzego tabeli. Wtedy każda iteracja zmniejsza liczbę elementów do posortowania o 1, więc funkcja sortująca zostanie wywołana n razy. Czyli złożoność będzie sumą: (n-k) dla k od 0 do n = n^2.

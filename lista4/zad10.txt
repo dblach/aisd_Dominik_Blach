@@ -1,0 +1,2 @@
+a) najlepszy przypadek: dla posortowanej tablicy ilość porównań to n-1 - w tym wypadku 6
+b) najgorszy przypadek: dla tablicy posortowanej malejąco ilość porównań to ([n^2]-n)/2=21
