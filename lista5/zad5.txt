@@ -1,0 +1,7 @@
+a) insertionsort (przez wstawianie) - stabilny
+b) quicksort (szybkie)              - niestabilny
+c) heapsort (przez kopcowanie)      - niestabilny 
+d) mergesort (przez złączanie)      - stabilny
+e) counting sort (przez zliczanie)  - stabilny
+f) radix sort (pozycyjne)           - stabilny
+g) bucket sort (kubełkowe)          - stabilny
