@@ -23,48 +23,26 @@ int suma(lnode *L){
     return s;
 }
 
-void usun(lnode **l,int n){
-    lnode* tmp=*l;
-    if(n==0){
-        *l=tmp->next;
-        free(tmp);
-        return;
-    }    
-
-    for(int i=0;tmp!=nullptr&&i<n-1;i++) tmp=tmp->next;
-    if(tmp==nullptr||tmp->next==nullptr) return;
-    lnode* next=tmp->next->next;
-    free(tmp->next);
-    tmp->next=next;
-}
-
 lnode* filter(lnode *L){
-    lnode* head=L;
-    int i=0;
+    lnode* a=new lnode();
+    lnode* h=a;
     while(L!=nullptr){
-        if(L->key<0){
-            std::cout<<"ujemny: "<<i<<"\n";
-            usun(&head,i);
-            return new lnode();
-            i--;
+        if(L->key>0){
+            a->key=L->key;
+            a->next=new lnode();
+            a=a->next;
         }
-        i++;
         L=L->next;
     }
-    return head;
+    return h;
 }
 
 int main(){
-    lnode* l1=nullptr; 
-    lnode* l2=nullptr;
-    lnode* l3=nullptr;
-    lnode* l4=nullptr;
-
-    l1=new lnode(); 
-    l2=new lnode(); 
-    l3=new lnode(); 
-    l4=new lnode();
-
+    lnode* l1=new lnode();
+    lnode* l2=new lnode();
+    lnode* l3=new lnode();
+    lnode* l4=new lnode();
+    
     l1->key=1;
     l1->next=l2;
     l2->key=-1;
@@ -77,9 +55,8 @@ int main(){
     std::cout<<nty(0,l1)<<","<<nty(1,l1)<<","<<nty(2,l1)<<","<<nty(3,l1)<<"\n";
     std::cout<<"s="<<suma(l1)<<"\n";
     
-    //zawiesza program :(
-    //lnode* lista2=filter(l1);
-    //std::cout<<nty(0,lista2)<<","<<nty(1,lista2)<<","<<nty(2,lista2)<<","<<nty(3,lista2)<<"\n";
-    
+    lnode* lista2=filter(l1);
+    std::cout<<nty(0,lista2)<<","<<nty(1,lista2)<<","<<nty(2,lista2)<<","<<nty(3,lista2)<<"\n";
+
     return 0;
 }
