@@ -1,0 +1,1 @@
+Algorytm sortowania kubełkowego działa najlepiej, gdy dane wejściowe są rozłożone w miarę równomiernie. Jeśli tak nie jest, to niektóre kubełki będą zawierały więcej danych niż inne. W najbardziej pesymistycznym przypadku wszystkie dane mogą trafić do jednego kubełka, wtedy złożoność wyniesie O(n^2).
